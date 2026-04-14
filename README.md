@@ -36,8 +36,8 @@ npm install -D tailwindcss @tailwindcss/vite
 ```
 
 ### 주요 구현 화면 (Phase 1 - UI 뼈대)
-* **Header** (Header.tsx): 서비스 로고와 뉴스 검색창을 포함한 고정 상단바
+* **Header (Header.tsx):** 서비스 로고와 뉴스 검색창을 포함한 고정 상단바
 
-* **MainPage** (MainPage.tsx): 뉴스 목록을 보여주는 카드 형태의 UI와 '크롤링 실행' 트리거 버튼 구현
+* **MainPage (MainPage.tsx):** 뉴스 목록을 보여주는 카드 형태의 UI와 '크롤링 실행' 트리거 버튼 구현
 
-* **DetailPage** (DetailPage.tsx): 기사 본문 원본과 Gemini AI 분석 결과(허위뉴스 위험도, 어려운 용어 풀이, 핵심 인물 정보)를 나란히 보여주는 2단 그리드 레이아웃 적용
+* **DetailPage (DetailPage.tsx):** 기사 본문 원본과 Gemini AI 분석 결과(허위뉴스 위험도, 어려운 용어 풀이, 핵심 인물 정보)를 나란히 보여주는 2단 그리드 레이아웃 적용

@@ -38,7 +38,7 @@ Tailwind CSS v4 설정 참고
 vite.config.ts 파일에 tailwindcss() 플러그인을 추가하고, src/index.css 파일에 @import "tailwindcss"; 한 줄만 작성하여 설정을 간소화했습니다.
 
 
-🔗 4. Git 초기 연동 기록
+###🔗 4. Git 초기 연동 기록
 로컬 저장소 생성부터 원격 레포지토리(GitHub) 강제 병합 후 최종 푸시까지의 과정입니다.
 
 # 1. Git 초기화 및 커밋
@@ -56,7 +56,7 @@ git pull origin main --allow-unrelated-histories
 # 4. 최종 푸시
 git push -u origin main
 
-5. 주요 구현 화면 (Phase 1 - UI 뼈대)
+###5. 주요 구현 화면 (Phase 1 - UI 뼈대)
 Header (Header.tsx): 서비스 로고와 뉴스 검색창을 포함한 고정 상단바
 
 MainPage (MainPage.tsx): 뉴스 목록을 보여주는 카드 형태의 UI와 '크롤링 실행' 트리거 버튼 구현

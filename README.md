@@ -35,7 +35,7 @@ npm install axios react-router-dom
 npm install -D tailwindcss @tailwindcss/vite
 ```
 
-주요 구현 화면 (Phase 1 - UI 뼈대)
+### 주요 구현 화면 (Phase 1 - UI 뼈대)
 Header (Header.tsx): 서비스 로고와 뉴스 검색창을 포함한 고정 상단바
 
 MainPage (MainPage.tsx): 뉴스 목록을 보여주는 카드 형태의 UI와 '크롤링 실행' 트리거 버튼 구현

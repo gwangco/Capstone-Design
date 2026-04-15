@@ -40,4 +40,4 @@ npm install -D tailwindcss @tailwindcss/vite
 
 * **MainPage (MainPage.tsx):** 뉴스 목록을 보여주는 카드 형태의 UI와 '크롤링 실행' 트리거 버튼 구현
 
-* **DetailPage (DetailPage.tsx):** 기사 본문 원본과 Gemini AI 분석 결과(허위뉴스 위험도, 어려운 용어 풀이, 핵심 인물 정보)를 나란히 보여주는 2단 그리드 레이아웃 적용
+* **DetailPage (DetailPage.tsx):** 기사 본문 원본과 AI 분석 결과(허위뉴스 위험도, 어려운 용어 풀이, 핵심 인물 정보)를 나란히 보여주는 2단 그리드 레이아웃 적용

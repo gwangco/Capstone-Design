@@ -33,6 +33,8 @@ npm install axios react-router-dom
 
 # 3. Tailwind CSS v4 설치 및 Vite 플러그인 추가
 npm install -D tailwindcss @tailwindcss/vite
+
+# 4. npm run dev 실행
 ```
 
 ### 주요 구현 화면 (Phase 1 - UI 뼈대)

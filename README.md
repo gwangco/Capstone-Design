@@ -20,7 +20,7 @@ src/
 ├── App.tsx             # 페이지 조립, 전역 레이아웃 및 라우터 설정
 └── index.css           # Tailwind 최상위 스타일 적용 (@import "tailwindcss";)
 ---
-
+```
 ### 🚀 3. 초기 세팅 가이드 (Setup Commands)
 프로젝트 생성부터 Tailwind CSS v4 설정까지의 통합 명령어입니다.
 

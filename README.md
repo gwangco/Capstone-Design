@@ -1,29 +1,43 @@
-## 🗺️ 캡스톤디자인 프론트엔드 로드맵
+## 🧭 뉴스 정보 나침반 - Frontend 설정 및 구조
 
-본 로드맵은 프론트엔드 기초 설정부터 백엔드 API 연동, 그리고 최종 서비스 구현까지의 단계를 담고 있습니다.
+### 🛠 1. 기술 스택 (Tech Stack)
+* **프레임워크:** React (Vite 기반)
+* **언어:** TypeScript (타입 지정으로 안정성 확보)
+* **스타일링:** Tailwind CSS v4 (직관적인 유틸리티 클래스 기반 디자인)
+* **API 통신:** Axios
+* **라우팅:** React Router v6
 
-### Phase 1: 기반 설정 및 UI 뼈대 구축 (Basic Setup & Skeleton)
-- [ ] **초기 환경 세팅**: React + TypeScript + Vite 프로젝트 생성
-- [ ] **패키지 설치**: Tailwind CSS (스타일링), Axios (API 통신), React Router (페이지 이동) 설정
-- [ ] **레이아웃 구성**: 
-  - 공통 Header (로고, 네비게이션, 검색창)
-  - Main Page 뼈대 (뉴스 리스트 영역)
-  - Detail Page 뼈대 (뉴스 본문 및 AI 분석 결과 영역)
+---
 
-### Phase 2: 핵심 데이터 연동 (Core Feature Integration)
-- [ ] **뉴스 목록 불러오기**: API 연동 및 메인 화면 리스트 렌더링
-- [ ] **뉴스 상세 보기**: API 연동 및 상세 페이지 데이터 바인딩
-- [ ] **상태 관리 및 에러 처리**: 로딩 중(Spinner) UI 및 데이터 로드 실패 시 에러 메시지 처리
+### 📂 2. 주요 디렉토리 구조
+작업이 완료된 `frontend/src`의 핵심 구조입니다.
 
-### Phase 3: AI 분석 기능 및 부가 기능 구현 (AI & Advanced Features)
-- [ ] **AI 분석 요청 기능**: 상세 페이지 내 'AI 분석하기' 버튼 및 `API` 연동
-- [ ] **분석 결과 UI 시각화**: 
-  - 신뢰도 점수 게이지 바 형태로 구현
-  - 어려운 용어 / 핵심 인물 팝업 또는 툴팁 처리
-- [ ] **뉴스 검색 기능**: Header 검색창과 `API` 연동
-- [ ] **수동 크롤링 트리거**: 관리자용 `API` 버튼 구현 (데모 시연용)
+* `src/components/`: 화면을 구성하는 공통 부품 (예: `Header.tsx`)
+* `src/pages/`: 라우터에 연결되는 전체 화면 (예: `MainPage.tsx`, `DetailPage.tsx`)
+* `src/App.tsx`: 페이지 조립 및 전역 라우터 설정
+* `src/index.css`: Tailwind 최상위 스타일 적용 (`@import "tailwindcss";`)
 
-### Phase 4: 폴리싱 및 최종 발표 준비 (Polishing & Release)
-- [ ] **반응형 웹 적용**: 모바일 및 태블릿 환경에서도 깨지지 않도록 CSS 수정
-- [ ] **예외 처리 고도화**: 만화 생성 API 미지원 등 백엔드 이슈에 대한 프론트엔드 측 우회 UI (예: "준비 중입니다" 문구 처리) 적용
-- [ ] **최종 테스트 및 버그 픽스**: 발표 시연 시나리오에 맞춘 전체 플로우 점검
+---
+
+### 🚀 3. 초기 세팅 가이드 (Setup Commands)
+프로젝트 생성부터 Tailwind CSS v4 설정까지의 통합 명령어입니다.
+
+```bash
+# 1. Vite를 사용해 React+TypeScript 프로젝트 생성 및 이동
+npm create vite@latest frontend -- --template react-ts
+cd frontend
+
+# 2. 필수 라이브러리 설치 (통신, 라우터)
+npm install
+npm install axios react-router-dom
+
+# 3. Tailwind CSS v4 설치 및 Vite 플러그인 추가
+npm install -D tailwindcss @tailwindcss/vite
+```
+
+### 주요 구현 화면 (Phase 1 - UI 뼈대)
+* **Header (Header.tsx):** 서비스 로고와 뉴스 검색창을 포함한 고정 상단바
+
+* **MainPage (MainPage.tsx):** 뉴스 목록을 보여주는 카드 형태의 UI와 '크롤링 실행' 트리거 버튼 구현
+
+* **DetailPage (DetailPage.tsx):** 기사 본문 원본과 AI 분석 결과(허위뉴스 위험도, 어려운 용어 풀이, 핵심 인물 정보)를 나란히 보여주는 2단 그리드 레이아웃 적용
